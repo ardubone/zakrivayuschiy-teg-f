@@ -1,1 +1,25 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+    /*шрифты*/
+    --main-font: 'Inter-Variable';
+    --accent-font: 'PressStart2P';
+    --title-weight:700;
+    --text-weight:400;
+
+/*Фон*/
+    --background-color:#E7E7E7;
+    --background-accent-color:#1A1A1A;
+
+/*хедер*/
+
+    --themes-main-color:#000;
+    --themes-background:#FFF;
+
+    /*градиент*/
+
+    --left-right-main-color: #d3d3d3;
+    --left-right-accent-color: transparent;
+    --top-bottom-main-color: #e7e7e7;
+    --top-bottom-accent-color: #1a1a1a;
+}

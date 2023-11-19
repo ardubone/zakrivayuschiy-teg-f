@@ -14,7 +14,228 @@
 
 */
 
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font), sans-serif;
+  background-image: 
+      repeating-linear-gradient(to right, var(--left-right-main-color), var(--left-right-accent-color) 2px),
+      repeating-linear-gradient(to bottom, var(--top-bottom-main-color), var(--top-bottom-accent-color) 2px);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--themes-main-color);
+}
+
+/*ХЭДЕР*/
+
+.header {
+  border: 2px solid var(--themes-main-color);
+  background: var(--themes-background);
+  margin-block-start: 102px;
+  margin-block-end: 104px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+  width: 48vw;
+}
+
+.main_title {
+  font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
+  margin-top: 120px;
+  font-weight: var(--text-weight);
+}
+
+.title {
+  font-weight: var(--title-weight)
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
+  font-weight: var(--text-weight);
+}
+
+/*меню тем*/
+
+.theme-menu {
+  margin: 25px 0;
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px; 
+}
+
+.theme-menu__item {
+  position: relative;
+}
+
+.theme-menu__button {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: var(--text-weight);
+}
+
+.theme-menu__button:active {
+  opacity: 0.6;
+  cursor: none;
+}
+
+.theme-menu__button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  position: absolute;
+  left: -15px;
+  transition-timing-function: ease-in-out;
+  animation: arrowmove 0.5s infinite ease-in-out reverse;
+}
+
+@keyframes arrowmove {
+  from {
+    left: -15px;
+  }
+
+  to {
+    left: -11px;
+  }
+}
+
+.theme-menu__button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.theme-menu__button:focus {
+  outline: none;  
+}
+
+.theme-menu__button::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  margin-top: 2px;
+  background-color: var( --themes-main-color);
+  transition: width 300ms, background-color 0.5s;
+}
+
+.theme-menu__button:focus-visible::after {
+  width: 100%;
+}
+
+.theme-menu__button:focus-visible {
+  opacity: 0.6;
+}
+
+/*КАРТОЧКИ С ФОТО*/
+
+.sprint {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--themes-main-color);
+  background: var(--themes-background);
+  width: 48vw;
+  margin-bottom: 54px;
+}
+
+.title {
+  padding: 5px 10px;
+  border-bottom: 2px solid var(--themes-main-color);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding: 25px;
+}
+
+.image_card {
+  position: relative;
+  border-bottom: 2px solid var(--themes-main-color);
+}
+
+.image_title {
+  position: absolute;
+  right: 25px;
+  margin-block-start: 25px;
+  font-size: 14px;
+  font-style: normal;
+  font-family: var(--accent-font);
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+  font-weight: var(--text-weight);
+  line-height: normal;
+  text-transform: uppercase;
+
+  text-shadow:
+    -1px 0 var(--themes-background), 
+    0 1px var(--themes-background), 
+    1px 0 var(--themes-background), 
+    0 -1px var(--themes-background);
+}
+
+@supports((text-stroke: 1px var(--themes-background)) or (-webkit-text-stroke: 1px var(--themes-background))) {
+  .image_title {
+      -webkit-text-stroke: 1px var(--themes-background);
+      text-stroke: 1px var(--themes-background);
+      text-shadow: none;
+  }
+} 
+
+.image {
+  object-fit: cover;
+  inline-size: 100%;
+}
+
+
+/*кнопки*/
+
+.card_control {
+  display: flex;
+  margin: 0 25px 25px auto;
+}
+
+.button__text {
+  border: 2px solid var(--themes-main-color, #000);
+  background: var(--themes-background, #FFF);
+  font-family: var(--accent-font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: var(--text-weight);
+  line-height: 90%;
+  display: flex;
+  padding: 9px 17px;
+  justify-content: center;
+  align-items: center;  
+}
+
+/*FOOTER*/
+
+
+/*ДИАЛОГОВОЕ ОКНО*/
+
+
+/*АДАПТИВ*/
+@media (width <= 815px) {
+
+  .header {
+    width: 100vw;
+  }
+
+  .sprint {
+    width: 100vw;
+    margin-bottom: 50px;
+  }
 }
