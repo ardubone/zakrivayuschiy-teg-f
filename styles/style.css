@@ -440,7 +440,7 @@
 }
 
 .ft_html .image {
-  filter: sepia(80%);
+  filter: sepia(80%) hue-rotate(90deg) invert(100%);
 }
 
 .ft_css .image {
@@ -460,7 +460,7 @@
 }
 
 .thrd_life .image {
-  filter: invert(100%);
+  filter: invert(100%) contrast(150%) brightness(120%);
 }
 
 .experience .image {
