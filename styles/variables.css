@@ -6,6 +6,7 @@
     --accent-font: 'PressStart2P';
     --title-weight:700;
     --text-weight:400;
+    --changed_text:#FFF;
 
 /*Фон*/
     --background-color:#E7E7E7;
@@ -26,4 +27,5 @@
 
     /*сердце*/
     --heart-color: #FF0000;
+    --heart_counter: var(--themes-main-color) ;
 }
