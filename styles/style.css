@@ -47,17 +47,15 @@
 
 .main_title {
   margin-top: 120px;
-  font-weight: var(--text-weight);
+  font-variation-settings: "wght" var(--text-weight);
   font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
 }
 
-.title {
-  font-weight: var(--title-weight);
-}
+
 
 .subtitle {
   margin-top: 20px;
-  font-weight: var(--text-weight);
+  font-variation-settings: "wght" var(--text-weight);
   font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
 }
 
@@ -70,7 +68,7 @@
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 14px; 
+  gap: 14px;
 }
 
 .theme-menu__item {
@@ -78,7 +76,7 @@
 }
 
 .theme-menu__button {
-  font-weight: var(--text-weight);
+  font-variation-settings: "wght" var(--text-weight);
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -120,7 +118,7 @@
 }
 
 .theme-menu__button:focus {
-  outline: none;  
+  outline: none;
 }
 
 .theme-menu__button::after {
@@ -155,6 +153,7 @@
 .title {
   border-bottom: 2px solid var(--themes-main-color);
   padding: 5px 10px;
+  font-variation-settings: "wght" var(--title-weight);
 }
 
 .description {
@@ -177,7 +176,7 @@
   right: 25px;
   opacity: 0.5;
   font-family: var(--accent-font);
-  font-weight: var(--text-weight);
+  font-variation-settings: "wght" var(--text-weight);
   font-size: 14px;
   font-style: normal;
   line-height: normal;
@@ -222,11 +221,11 @@
   padding: 9px 17px;
   overflow: hidden;
   font-family: var(--accent-font);
-  font-weight: var(--text-weight);
+  font-variation-settings: "wght" var(--text-weight);
   font-size: 14px;
   font-style: normal;
   line-height: 90%;
-  transition: 0.5s ease-in-out;  
+  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
@@ -377,7 +376,7 @@
   max-width: 234px;
   color: var(--changed_text);
   font-family: var(--accent-font);
-  font-weight: var(--text-weight);
+  font-variation-settings: "wght" var(--text-weight);
   font-size: 14px;
   font-style: normal;
   line-height: 150%; /* 21px */
@@ -421,7 +420,7 @@
 
 .save_button {
   gap: 8px;
-  margin-bottom: 105px; 
+  margin-bottom: 105px;
   background: var(--themes-background);
 }
 
