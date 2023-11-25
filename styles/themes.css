@@ -25,9 +25,9 @@
         --top-bottom-accent-color: #1a1a1a;
     }
 
-    @media (prefers-color-scheme: dark) {
+    /*@media (prefers-color-scheme: dark) {*/
 
-    :root {
+    :root.theme-dark {
 
         /*шрифт*/
         --changed_text:#00CC14 ;
@@ -48,4 +48,4 @@
         --top-bottom-main-color: #007f0c;
         --top-bottom-accent-color: #004306;
     }
-}
+/*}*/

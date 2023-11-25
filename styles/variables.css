@@ -29,3 +29,51 @@
     --heart-color: #FF0000;
     --heart_counter: var(--themes-main-color) ;
 }
+
+
+@media (prefers-color-scheme: light) {
+
+    :root {
+    
+        --changed_text:#FFF;
+
+    /*Фон*/
+        --background-color:#E7E7E7;
+        --background-accent-color:#1A1A1A;
+    
+    /*хедер*/
+        --themes-main-color:#000;
+        --themes-background:#FFF;
+
+    /*градиент*/
+        --left-right-main-color: #d3d3d3;
+        --left-right-accent-color: transparent;
+        --top-bottom-main-color: #e7e7e7;
+        --top-bottom-accent-color: #1a1a1a;
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+
+        /*шрифт*/
+        --changed_text:#00CC14 ;
+
+    /*Фон*/
+        --background-color:#007F0C;
+        --background-accent-color:#004306;
+    
+    /*хедер*/
+        --themes-main-color:#00CC14;
+        --themes-background:#000;
+
+
+    /*градиент*/
+
+        --left-right-main-color: #000;
+        --left-right-accent-color: transparent;
+        --top-bottom-main-color: #007f0c;
+        --top-bottom-accent-color: #004306;
+    }
+}
