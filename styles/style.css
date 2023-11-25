@@ -266,8 +266,10 @@
 }
 
 .floppy-svg {
+  display:block;
   width: 21px;
   height: 21px;
+  color: var(--changed_text);
   mix-blend-mode: difference;
 }
 
@@ -342,19 +344,12 @@
   background: var(--themes-background);
 }
 
-.floppy-svg {
-  display:block;
-  width: 21px;
-  height: 21px;
-  color: var(--changed_text);
-  mix-blend-mode: difference;
-}
-
 /*АДАПТИВ*/
 @media (width <= 815px) {
 
   .main_title {
-    margin-top: 120px;}
+    margin-top: 120px;
+  }
 
   .header {
     width: 100vw;
