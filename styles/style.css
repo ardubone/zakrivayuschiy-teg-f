@@ -262,7 +262,7 @@
 }
 
 .card__icon-button:focus-visible {
-  border: 2px solid var(--themes-main-color);
+  outline: 2px solid var(--themes-main-color);
 }
 
 .floppy-svg {
@@ -285,7 +285,7 @@
 }
 
 .dialog {
-  border: 2px solid var(--background-color);
+  border: 2px solid var(--themes-main-color);
   padding: 0;
   background: var(--themes-background);
 }
@@ -342,6 +342,7 @@
   width: 335px;
   margin-bottom: 105px;
   background: var(--themes-background);
+  height: 51px;
 }
 
 /*АДАПТИВ*/
